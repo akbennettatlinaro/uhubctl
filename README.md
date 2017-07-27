@@ -85,6 +85,15 @@ On Linux, you may need to run it with `sudo`, or to configure `udev` USB permiss
 If you have more than one smart USB hub connected, you should choose
 specific hub to control using `-l` (location) parameter.
 
+Running in a Container
+======================
+    
+    #Run as Root
+    curl -L https://raw.githubusercontent.com/akbennettatlinaro/uhubctl/master/run.sh > /usr/bin/uhubctl
+    chmod +x /usr/bin/uhubctl
+
+    #Run as normal user
+    uhubctl -h
 
 Copyright
 =========
